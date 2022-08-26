@@ -47,7 +47,7 @@ parameters:
   default: ''
 
 stages:
-- stage: Python_Packaging
+- stage: Cuda_Python_Packaging
 
   variables:
     - name: isMain
@@ -96,7 +96,7 @@ stages:
             echo "Branch is "${{ variables['Build.SourceBranch'] }} && \
             echo "isMain is "${{ variables['isMain'] }} && \
             echo "final_storage is "${{ variables['finalStorage'] }}
-     
+
       - checkout: self
         clean: true
         submodules: recursive

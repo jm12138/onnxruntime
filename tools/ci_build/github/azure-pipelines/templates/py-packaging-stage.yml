@@ -30,6 +30,11 @@ parameters:
   type: boolean
   default: true
 
+- name: windows_cpu_build_config
+  displayName: 'Build config to be used for windows cpu build.'
+  type: string
+  default: 'RelWithDebInfo'
+
 - name: enable_windows_gpu
   displayName: 'Whether Windows GPU package is built.'
   type: boolean
@@ -437,7 +442,7 @@ stages:
         OnnxRuntimeBuildDirectory: '$(Build.BinariesDirectory)'
         EnvSetupScript: setup_env.bat
         setVcvars: true
-        BuildConfig: 'RelWithDebInfo'
+        BuildConfig: ${{ parameters.windows_cpu_build_config }}
       timeoutInMinutes: 120
       workspace:
         clean: all
