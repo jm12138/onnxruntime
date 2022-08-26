@@ -46,7 +46,7 @@ RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86
 ENV PATH=/opt/miniconda/bin:${PATH}
 RUN pip install numpy "wheel>=0.35.1"
 
-RUN yum remove -y devtoolset\* git\* && conda remove -y cmake
+RUN yum remove -y devtoolset\* git\*
 
 ENV AUDITWHEEL_POLICY=${POLICY} AUDITWHEEL_ARCH=${PLATFORM} AUDITWHEEL_PLAT=${POLICY}_${PLATFORM}
 ENV LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8
