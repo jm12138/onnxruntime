@@ -15,6 +15,7 @@ stages:
     parameters:
       PythonVersion: '3.7'
       RocmVersion: '5.2.3'
+      TorchVersion: '1.12.1'
   # - template: templates/rocm.yml
   #   parameters:
   #     PythonVersion: '3.8'
