@@ -34,7 +34,7 @@ jobs:
           python3 -m pip install -r ${{ github.workspace }}/tools/ci_build/github/linux/tvm/requirements.txt
       - name: 'Build and Test'
         run: |
-          python3 ${{ github.workspace }}/tools/ci_build/build.py --build_dir build --config Release --parallel --enable_pybind --skip_onnx_tests --use_dml --use_winml --build_wheel
+          python3 ${{ github.workspace }}/tools/ci_build/build.py --build_dir build --config Release --parallel --enable_pybind --skip_onnx_tests --use_dml --use_winml --build_wheel --build_shared_lib
 
       - name: Use the Upload Artifact GitHub Action to Upload Build Files
         uses: actions/upload-artifact@v2
