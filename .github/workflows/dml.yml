@@ -38,7 +38,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          ref: "v1.12.1"
+          ref: "main"
 
       # Build Ort DML Wheel for Python
       - name: Build Ort DML Wheel for Python ${{ matrix.python-version }}
@@ -47,5 +47,5 @@ jobs:
       - name: Use the Upload Artifact GitHub Action to Upload Build Files
         uses: actions/upload-artifact@v2
         with: 
-          name: onnxruntime-dml-py${{ matrix.python-version }}-v1.12.1
+          name: onnxruntime-dml-py${{ matrix.python-version }}-main
           path: build/Windows/Release/Release/dist
