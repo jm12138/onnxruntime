@@ -576,7 +576,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "gLBc9YMVpBp2V2tjf2lZFAkQ0LXgmfkL9J9GsO4w1RU="
+          "hash": "CiaTtTmQFwW8tTNOP4RfKb++dztK3kM8p7vUNYQt6OA="
         }
       },
       "is_incremental": false,
@@ -600,7 +600,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "70466LPD15oprqAnSNr563+HSKT+r1HEdpvPDzOyk8I="
+          "hash": "PCL1RAIdmxGWhuduDbBuPx76tAzBlvh2VJsDyj5mhsA="
         }
       },
       "is_incremental": false,
